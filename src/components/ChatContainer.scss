@@ -1,0 +1,163 @@
+.content-chat{
+    // background-image: url('../assets/pngtree-green-premium-banner-picture-image_1178923.jpg');
+    // opacity: 0.1;
+    height: 100%;
+    .header1-chat{
+        height: 50px;
+        display: block;
+        @media (min-width: 768px) {
+            width: 80%;
+            display: none;
+        }
+        i{
+            margin: 10px;
+            font-size: 25px;
+        }
+    }
+    .Chatbox{
+        height: calc(100% - 200px);
+        // minheight: 800px;
+        // padding-bottom: 300px;
+        width: calc(100% - 10px);
+        padding: 10px;
+        overflow:auto;
+        @media (min-width: 768px) {
+            height: calc(100% - 150px);
+        }
+    }
+   
+    .chat-user{
+        .chat-item{
+            background-color: #FFFFFF;
+            max-width: calc(100% - 550px);
+            margin-left: auto;
+            margin-top: 30px;
+            width: fit-content;
+            text-align: end;
+            border-radius: 20px;
+            padding: 10px;
+            min-width: 400px;
+        .chatUser{
+            // width:fit-content;
+            word-wrap: break-word;
+            overflow-x: auto;
+        }
+            .space{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .operation{
+                text-align: start;
+                padding: 10px;
+                i {
+                    font-size: 14px;
+                }
+                img, i{
+                    color: black;
+                    width: 14px;
+                    height: 14px;
+                    margin: 10px;
+                }
+                .ahuhu{
+                    display: flex;
+                    flex-direction: row;          
+                }
+            }
+
+        }
+    }
+
+    .chat-bot{
+        margin-top: 30px;
+        text-align: start;
+        background-color: #FFFFFF;
+        border-radius: 0px 15px 15px 15px;
+        width: fit-content;
+        max-width: calc(100% - 550px);
+        // border-radius: 20px;
+        padding: 10px;
+        min-width: 400px;
+        .operation{
+            display: flex;
+            flex-direction: column;
+            justify-self: flex-end;
+            align-items: flex-end;
+        }
+        .chatUser{
+            // width:fit-content;
+            word-wrap: break-word;
+            overflow-x: auto;
+        }
+        img, i{
+            color: black;
+            width: 14px;
+            height: 14px;
+            margin: 10px;
+        }
+        i {
+            font-size: 14px;
+
+        }
+        .ahuhu{
+            display: flex;
+            flex-direction: row; 
+        }
+    }
+    .footer-chat{
+        height: 130px;
+        position: absolute;
+        width: calc(100%  - 320px) ;
+        margin: 10px;
+        border: 1px solid #E6EAEE;
+        // border: 1px solid #666666;
+        background: linear-gradient(to bottom, #FAFAFD , #FFFFFF);
+        display: flex;
+        // z-index:-2;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 768px) {
+            width: calc(100% - 20px);
+        }
+
+        .chat{    
+            // position: absolute;
+            border: 1px solid #F5F5f5;
+            display: flex;
+            border-radius: 15px;
+            height: 50px;
+            color: rgb(82 82 82/var(--tw-text-opacity));
+            // width: 250px;
+            margin-top: 30px;
+            padding: 5px;
+            bottom: 30px;
+            // left: 30%;
+            width: 90%;
+            background-color: white;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            img{
+                padding: 10px;
+                width: 40px;
+                height: 40px;
+            }
+            .input-chat {
+                border: none;
+                outline: none;
+                color: #ccc;
+                padding: 5px;
+                resize: none;
+                // word-wrap: break-word;
+                // padding: 10px;
+                width: 100%;    
+                // max-width: calc(100% - 71.14px);
+                // max-width: 100%;
+            }
+            .group-button{
+                display: flex;
+                // flex-basis: 1;
+                flex-direction: row;
+                width: 71.14px;
+            }
+        }
+    }
+}
