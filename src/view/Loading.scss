@@ -1,0 +1,33 @@
+.content-loading{
+    background: #14162E;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    @keyframes ef {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .logo-web{
+        position: absolute;
+        top: 350px;
+        .web-name{
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        img{
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+            // animation: ef 1s infinite;
+        }
+    }
+
+}

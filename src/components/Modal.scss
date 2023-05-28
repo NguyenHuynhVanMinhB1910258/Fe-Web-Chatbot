@@ -1,0 +1,65 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    z-index: 9999;
+    
+    justify-content: center;
+    align-items: center;
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      width: 60%;
+      border-radius: 4px;
+      .microphone-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+        background-color: #f2f2f2;
+        border-radius: 50%;
+        margin: 20px auto;
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      }
+      
+      .microphone-icon.recording {
+        width: 60px;
+        height: 60px;
+        background-color: #ff0000;
+      }
+      .microphone-icon svg {
+        width: 30px;
+        height: 30px;
+        color: #333;
+      }
+    }
+  }
+  
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content p {
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button {
+    background-color: #4461F2;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color:  #4461F2;
+  }
+  

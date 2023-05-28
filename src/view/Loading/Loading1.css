@@ -1,0 +1,159 @@
+.huhu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 2px;
+    position: absolute;
+    width: 131px;
+    height: 181px;
+    left: calc(50% - 131px/2 + 0.5px);
+    top: calc(50% - 181px/2);
+}
+.content1{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    font-size: 16px;
+}
+.content1 button{
+    border: none;
+    background: none;
+    color: rgb(61, 252, 77);
+    font-weight: bold;
+    font-size: 18px;
+}
+.image {
+    position: relative;
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background-color: #6172F3;
+    overflow: hidden;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cham {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    flex: none;
+    /* order: 1; */
+    flex-grow: 0;
+}
+.cham div{
+    width: 8px;
+    border-radius: 4px;
+    height: 8px;
+    background: #D9D9D9;
+    transform: rotate(180deg);
+}
+@keyframes loading {
+    0% {
+        margin-top: 0px;
+        background: #D9D9D9;
+    }
+    50% {
+        margin-top: -25px;
+        background: #6172F3;
+    }
+    100% {
+        margin-top: 0px;
+        background: #D9D9D9;
+    }
+}
+@keyframes message {
+    0% {
+        /* margin-top: 0px; */
+        fill: #D9D9D9;
+    }
+   
+    100% {
+        /* margin-top: 0px; */
+        fill: #6172F3;
+    }
+}
+@keyframes example {
+    0% {
+        margin-top: 100%;
+    }
+    15% {
+        margin-top: 55%;
+    }
+
+    30%  {
+        margin-top: 35%;
+    }
+    70%  {
+        margin-top: 35%;
+    }
+    100% {
+        margin-top: 100%;
+    }
+}
+@keyframes example2 {
+    0% {
+        top: 130px;
+        display: none;
+    }
+    15% {
+        top: 130px;
+    }
+
+    30%  {
+        top: 10px;
+    }
+    50%{
+        top: 10px;
+    }
+    100% {
+        top: 130px;
+        display: none;
+    }
+}
+.farme-message{
+    position: absolute;
+    width: 131px;
+    height: 130px;
+    display: flex;
+    overflow: hidden;
+    top: 0%;
+    justify-content: center;
+    z-index: 0;
+    /* z-index: 1; */
+}
+.farme-rb{
+    z-index: 1;
+    position: relative;
+}
+.robot{
+    margin-top: 35%;
+    margin-left: 6.5px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.message1{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.message2{
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
